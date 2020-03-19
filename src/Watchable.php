@@ -13,7 +13,7 @@ trait Watchable
     {
         $userClass = config('auth.providers.users.model');
 
-        return $this->morphToMany($userClass, 'watchable');
+        return $this->morphToMany($userClass, 'watchable')->withTimestamps();
     }
 
     /**

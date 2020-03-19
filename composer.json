@@ -1,0 +1,44 @@
+{
+    "name": "telkins/laravel-watchable",
+    "description": "Allows Eloquent models to be added to a watchlist.",
+    "keywords": [
+        "laravel",
+        "eloquent",
+        "watchable",
+        "watchlist"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Elkins",
+            "email": "travis.elkins+github@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/support": "^6.0|^7.0",
+        "illuminate/database": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Telkins\\Watchable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Telkins\\Watchable\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Telkins\\Watchable\\WatchableServiceProvider"
+            ]
+        }
+    }
+}
